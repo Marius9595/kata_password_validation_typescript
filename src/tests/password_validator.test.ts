@@ -11,8 +11,13 @@ TODO:
 import { is_valid_password } from '../core/password_validator';
 
 describe('Password validator should', () => {
-	it('validate a password that meet all requirements of strong password', () => {
+	it('evaluate as valid a password that meet all requirements of strong password', () => {
 		const strong_password = 'a23n_E';
 		expect(is_valid_password(strong_password)).toBeTruthy();
+	});
+
+	it('evaluate as invalid a password that has not the minimum length', () => {
+		const short_password = 'a2n_E';
+		expect(is_valid_password(short_password)).toBeFalsy();
 	});
 });
