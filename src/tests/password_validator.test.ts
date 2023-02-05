@@ -20,4 +20,8 @@ describe('Password validator should', () => {
 		const short_password = 'a2n_E';
 		expect(is_valid_password(short_password)).toBeFalsy();
 	});
+
+	it('evaluate as invalid a password that has not at least a uppercase letter', () => {
+		expect(is_valid_password('a23n_e')).toBeFalsy();
+	});
 });
