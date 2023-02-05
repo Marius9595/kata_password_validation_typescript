@@ -1,19 +1,18 @@
-# Template - Testing Sostenible con TypeScript
+# Kata Password Validation with Typescript
 
-Plantilla base para practicar las katas del curso o para empezar un proyecto nuevo.
+In this kata you have to develop a function that validates passwords as Strong if these meet the following requirements:
+* Its minimun length is 6 characteres
+* It should contains at least number
+* It should contains at least a Capital letter
+* It should contains at least lower case letter
+* It should contains at least underscore symbol
 
-Incluye:
-* TypeScript
-* Jest
-* ESLint
-* Prettier
-* Husky
-
-## Instrucciones
+## Instructions
+* `npm upgrade`
 * `npm install`
 * `npm test`
 
-Más información sobre el curso en [testingsostenible.com](https://testingsostenible.com).
+Check this course! [testingsostenible.com](https://testingsostenible.com).
 
 ![Testing Sostenible con TypeScript](cover.png)
 
