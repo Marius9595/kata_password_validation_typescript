@@ -1,3 +1,3 @@
 export function is_valid_password(password: string): boolean {
-	return false;
+	return true;
 }
