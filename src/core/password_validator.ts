@@ -1,1 +1,3 @@
-export function is_valid_password(password: string): boolean {}
+export function is_valid_password(password: string): boolean {
+	return false;
+}
