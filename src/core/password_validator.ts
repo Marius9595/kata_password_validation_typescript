@@ -1,5 +1,6 @@
 export function is_valid_password(password: string): boolean {
-	if (password.length < 6) {
+	const minimum_length = 6;
+	if (password.length < minimum_length) {
 		return false;
 	}
 	return true;
