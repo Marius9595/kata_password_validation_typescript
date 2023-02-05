@@ -8,5 +8,9 @@ export function is_valid_password(password: string): boolean {
 		return false;
 	}
 
+	if (password.toUpperCase() === password) {
+		return false;
+	}
+
 	return true;
 }
