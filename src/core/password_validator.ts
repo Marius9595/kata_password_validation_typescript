@@ -3,5 +3,10 @@ export function is_valid_password(password: string): boolean {
 	if (password.length < minimum_length) {
 		return false;
 	}
+
+	if (password.toLowerCase() === password) {
+		return false;
+	}
+
 	return true;
 }
