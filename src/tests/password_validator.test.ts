@@ -24,4 +24,8 @@ describe('Password validator should', () => {
 	it('evaluate as invalid a password that has not at least a uppercase letter', () => {
 		expect(is_valid_password('a23n_e')).toBeFalsy();
 	});
+
+	it('evaluate as invalid a password that has not at least a lowercase letter', () => {
+		expect(is_valid_password('A23N_E')).toBeFalsy();
+	});
 });
