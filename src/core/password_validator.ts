@@ -14,12 +14,17 @@ function ThereIsANumber(password: string) {
 	return password.search('[0-9]') !== -1;
 }
 
+function HasUnderscore(password: string) {
+	return password.search('_') !== -1;
+}
+
 export function is_valid_password(password: string): boolean {
 	const minimum_length = 6;
 	return (
 		ThereIsANumber(password) &&
 		HasMinimumLength(password, minimum_length) &&
 		HasLowercaseLetter(password) &&
-		HasUppercaseLetter(password)
+		HasUppercaseLetter(password) &&
+		HasUnderscore(password)
 	);
 }
