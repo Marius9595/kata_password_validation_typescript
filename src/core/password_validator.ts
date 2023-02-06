@@ -12,5 +12,10 @@ export function is_valid_password(password: string): boolean {
 		return false;
 	}
 
+	const there_is_a_number = password.search('[0-9]') === -1;
+	if (there_is_a_number) {
+		return false;
+	}
+
 	return true;
 }
