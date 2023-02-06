@@ -1,14 +1,17 @@
 export function is_valid_password(password: string): boolean {
 	const minimum_length = 6;
-	if (password.length < minimum_length) {
+	const has_minimum_length = password.length < minimum_length;
+	if (has_minimum_length) {
 		return false;
 	}
 
-	if (password.toLowerCase() === password) {
+	const has_lowercase_letter = password.toLowerCase() === password;
+	if (has_lowercase_letter) {
 		return false;
 	}
 
-	if (password.toUpperCase() === password) {
+	const has_uppercase_letter = password.toUpperCase() === password;
+	if (has_uppercase_letter) {
 		return false;
 	}
 
